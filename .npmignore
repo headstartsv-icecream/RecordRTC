@@ -1,8 +1,0 @@
-# ignore everything
-*
-
-# but not these files...
-!RecordRTC.js
-!RecordRTC.min.js
-!package.json
-!bower.json
