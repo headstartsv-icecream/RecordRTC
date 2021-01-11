@@ -1769,7 +1769,7 @@ var browserFakeUserAgent =
   }
 
   /*global window:true */
-  that.window = global;
+  // that.window = global;
 })(typeof global !== "undefined" ? global : null);
 
 // _____________________________
