@@ -1710,34 +1710,34 @@ var browserFakeUserAgent =
       };
   }
 
-  if (typeof document === "undefined") {
-    /*global document:true */
-    that.document = {
-      documentElement: {
-        appendChild: function () {
-          return "";
-        },
-      },
-    };
+  // if (typeof document === "undefined") {
+  //   /*global document:true */
+  //   that.document = {
+  //     documentElement: {
+  //       appendChild: function () {
+  //         return "";
+  //       },
+  //     },
+  //   };
 
-    document.createElement = document.captureStream = document.mozCaptureStream = function () {
-      var obj = {
-        getContext: function () {
-          return obj;
-        },
-        play: function () {},
-        pause: function () {},
-        drawImage: function () {},
-        toDataURL: function () {
-          return "";
-        },
-        style: {},
-      };
-      return obj;
-    };
+  //   document.createElement = document.captureStream = document.mozCaptureStream = function () {
+  //     var obj = {
+  //       getContext: function () {
+  //         return obj;
+  //       },
+  //       play: function () {},
+  //       pause: function () {},
+  //       drawImage: function () {},
+  //       toDataURL: function () {
+  //         return "";
+  //       },
+  //       style: {},
+  //     };
+  //     return obj;
+  //   };
 
-    that.HTMLVideoElement = function () {};
-  }
+  //   that.HTMLVideoElement = function () {};
+  // }
 
   if (typeof location === "undefined") {
     /*global location:true */
